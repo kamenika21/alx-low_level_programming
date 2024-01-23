@@ -3,8 +3,14 @@
 
 /**
  * _puts_recursion - Print a string with a new line
+ * @*s: string to be printed
  */
 void _puts_recursion(char *s)
 {
-	write(1,&*s,1);
+	if (*s == *s.count()-1)
+	{
+		return;
+	}
+	write(1, &*s, 1);
+	_puts_recursion(*s +1);
 }
