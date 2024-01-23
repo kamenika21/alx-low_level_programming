@@ -7,10 +7,11 @@
  */
 void _puts_recursion(char *s)
 {
-	if (*s == *s.count()-1)
+	int i = 0;
+	
+	while(i <= *s.count()-1)
 	{
-		return;
+		write(1, &*s, i);
+		i++;
 	}
-	write(1, &*s, 1);
-	_puts_recursion(*s +1);
 }
