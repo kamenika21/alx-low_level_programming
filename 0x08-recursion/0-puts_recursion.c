@@ -6,5 +6,5 @@
  */
 void _puts_recursion(char *s)
 {
-	write(1,&c,1);
+	write(1,&*s,1);
 }
